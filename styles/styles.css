@@ -7,4 +7,93 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1rem;
+  background-color: #7f7f7f;
+}
+
+.wrapper .wrapper__title {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.wrapper .wrapper__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.wrapper .wrapper__header .wrapper__result {
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  border: 2px solid #58555a;
+  background-color: #fff;
+  font-size: 0.9rem;
+}
+
+.wrapper .wrapper__header .result__btn {
+  position: absolute;
+  padding: 0.5rem;
+  right: 0;
+}
+
+.wrapper .wrapper__header .wrapper__header-input:focus {
+  outline: none;
+}
+
+.wrapper .wrapper__header .wrapper__header-input::-webkit-input-placeholder {
+  letter-spacing: 2px;
+}
+
+.wrapper .wrapper__header .wrapper__header-input:-ms-input-placeholder {
+  letter-spacing: 2px;
+}
+
+.wrapper .wrapper__header .wrapper__header-input::-ms-input-placeholder {
+  letter-spacing: 2px;
+}
+
+.wrapper .wrapper__header .wrapper__header-input::placeholder {
+  letter-spacing: 2px;
+}
+
+.wrapper .wrapper__main .wrapper__setting .wrapper__setting-title {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.wrapper .wrapper__btn {
+  background-color: #58555a;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.wrapper .wrapper__btn .wrapper__icon {
+  font-size: 1.5rem;
+}
+
+.wrapper .wrapper__btn:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */
