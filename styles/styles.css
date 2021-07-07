@@ -19,7 +19,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background-image: url(/img/bg.jpg);
+  background-image: url(https://sh4ke96.github.io/PasswordGenerator/img/bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
