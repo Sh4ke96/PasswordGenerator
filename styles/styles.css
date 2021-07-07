@@ -8,7 +8,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.wrapper {
+.wrapper__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-image: url(/img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper__container .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,18 +36,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
+  margin: 1rem;
   background-color: #7f7f7f;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.wrapper .wrapper__title {
+.wrapper__container .wrapper .wrapper__title {
   color: #fff;
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.wrapper .wrapper__header {
+.wrapper__container .wrapper .wrapper__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,47 +62,77 @@ body {
   position: relative;
 }
 
-.wrapper .wrapper__header .wrapper__result {
-  display: inline-block;
+.wrapper__container .wrapper .wrapper__header .wrapper__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 30px;
   width: 250px;
   height: 40px;
   border: 2px solid #58555a;
+  color: #58555a;
   background-color: #fff;
   font-size: 0.9rem;
 }
 
-.wrapper .wrapper__header .result__btn {
+.wrapper__container .wrapper .wrapper__header .result__btn {
   position: absolute;
-  padding: 0.5rem;
+  padding: 0.58rem;
   right: 0;
+  top: 0;
 }
 
-.wrapper .wrapper__header .wrapper__header-input:focus {
+.wrapper__container .wrapper .wrapper__header .wrapper__header-input:focus {
   outline: none;
 }
 
-.wrapper .wrapper__header .wrapper__header-input::-webkit-input-placeholder {
+.wrapper__container .wrapper .wrapper__header .wrapper__header-input::-webkit-input-placeholder {
   letter-spacing: 2px;
 }
 
-.wrapper .wrapper__header .wrapper__header-input:-ms-input-placeholder {
+.wrapper__container .wrapper .wrapper__header .wrapper__header-input:-ms-input-placeholder {
   letter-spacing: 2px;
 }
 
-.wrapper .wrapper__header .wrapper__header-input::-ms-input-placeholder {
+.wrapper__container .wrapper .wrapper__header .wrapper__header-input::-ms-input-placeholder {
   letter-spacing: 2px;
 }
 
-.wrapper .wrapper__header .wrapper__header-input::placeholder {
+.wrapper__container .wrapper .wrapper__header .wrapper__header-input::placeholder {
   letter-spacing: 2px;
 }
 
-.wrapper .wrapper__main .wrapper__setting .wrapper__setting-title {
+.wrapper__container .wrapper .wrapper__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.wrapper__container .wrapper .wrapper__main .wrapper__setting .wrapper__setting-title {
   color: #fff;
   font-size: 1.1rem;
 }
 
-.wrapper .wrapper__btn {
+.wrapper__container .wrapper .wrapper__main .setting__btn {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.wrapper__container .wrapper .wrapper__btn {
   background-color: #58555a;
   border: none;
   padding: 1rem;
@@ -89,11 +141,12 @@ body {
   letter-spacing: 2px;
 }
 
-.wrapper .wrapper__btn .wrapper__icon {
+.wrapper__container .wrapper .wrapper__btn .wrapper__icon {
   font-size: 1.5rem;
 }
 
-.wrapper .wrapper__btn:hover {
+.wrapper__container .wrapper .wrapper__btn:hover {
   cursor: pointer;
+  background-color: #3a393b;
 }
 /*# sourceMappingURL=styles.css.map */
