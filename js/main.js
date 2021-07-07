@@ -10,8 +10,8 @@ const clipboardEl = document.getElementById("clipboard");
 window.onload = onPageLoad();
 
 function onPageLoad() {
-  uppercaseEl.checked = false;
-  lowercaseEl.checked = false;
+  uppercaseEl.checked = true;
+  lowercaseEl.checked = true;
   numbersEl.checked = false;
   symbolsEl.checked = false;
 }

@@ -116,10 +116,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 1rem;
+}
+
+.wrapper__container .wrapper .wrapper__main .wrapper__setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem 0;
+  width: 270px;
+}
+
+.wrapper__container .wrapper .wrapper__main .wrapper__setting .wrapper__input {
+  width: 40px;
 }
 
 .wrapper__container .wrapper .wrapper__main .wrapper__setting .wrapper__setting-title {
