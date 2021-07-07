@@ -7,6 +7,15 @@ const symbolsEl = document.getElementById("symbols");
 const generateEl = document.getElementById("generate");
 const clipboardEl = document.getElementById("clipboard");
 
+window.onload = onPageLoad();
+
+function onPageLoad() {
+  uppercaseEl.checked = false;
+  lowercaseEl.checked = false;
+  numbersEl.checked = false;
+  symbolsEl.checked = false;
+}
+
 const randomFunc = {
   lower: getRandomLower,
   upper: getRandomUpper,
